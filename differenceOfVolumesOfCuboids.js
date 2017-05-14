@@ -9,15 +9,16 @@
 function find_difference(a, b) {
   function reducer(arr) {
     return arr.reduce(function(a, b) {
-      return b * a;
+      return a * b;
     });
   }
   return Math.abs(reducer(a) - reducer(b));
 }
 
-// var volA = a.reduce(function(a, b) {
-//     return b * a;
-//   });
-//   var volB = b.reduce(function(a, b) {
-//     return b * a;
-//   });
+//BECOMES (for one line)
+const find_difference = (a, b) => Math.abs(a.reduce((a, b) => a * b) - b.reduce((a, b) => a * b));
+
+//ALSO
+function find_difference([a, b, c], [d, e, f]) {
+  return Math.abs(a * b * c - d * e * f)
+}
