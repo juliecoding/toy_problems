@@ -3,5 +3,4 @@
 const simpleMultiplication = n => n % 2 ? n * 8 : n * 9
 
 //BECOMES 
-
 const simpleMultiplication = n => n * (n % 2 ? 9 : 8)
