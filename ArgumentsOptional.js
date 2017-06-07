@@ -7,7 +7,7 @@
 
 function addTogether() {
   const args = Array.prototype.slice.call(arguments)
-  const actuallyNumbers = el => typeof el === 'number' && Number.parseFloat(el)
+  const actuallyNumbers = el => typeof el === 'number'
 
   if (!args.every(actuallyNumbers)) {
     return undefined
