@@ -12,12 +12,5 @@ function firstNonConsecutive(arr) {
       return arr[i];
     }
   }
+  return null;
 }
-
-// function firstNonConsecutive(arr) {
-//   arr.filter(function(el) {
-//     if (el !== arr[el.indexOf - 1] + 1) {
-//       return el;
-//     }
-//   });
-// }
