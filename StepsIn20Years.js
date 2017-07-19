@@ -45,3 +45,9 @@ function stairsIn20(s) {
   const sumArray = (a, b) => a + b
   return s.map(el => el.reduce(sumArray)).reduce(sumArray) * 20
 }
+
+//BECOMES
+// A proper solution
+function stairsIn20(a) {
+  return 20 * a.reduce((s, a) => s + a.reduce((s, n) => s + n, 0), 0);
+}
